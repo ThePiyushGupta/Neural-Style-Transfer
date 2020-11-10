@@ -25,11 +25,11 @@ The **Script Helper** program can be downloaded from the Releases tab of this re
 
 # Examples
 ## Single Style Transfer
-<img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/inputs/content/blue-moon-lake.jpg" width=49% height=300 alt="blue moon lake"> <img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" width=49% height=300 alt="starry night">
+<img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural-Style-Transfer/master/images/inputs/content/blue-moon-lake.jpg" width=49% height=300 alt="blue moon lake"> <img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural-Style-Transfer/master/images/inputs/style/starry_night.jpg" width=49% height=300 alt="starry night">
 <br><br> Results after 100 iterations using the INetwork<br>
 <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Blue-Moon-Lake_at_iteration_100.jpg?raw=true" width=98% height=450 alt="blue moon lake style transfer">
 <br><br> DeepArt.io result (1000 iterations and using improvements such as Markov Random Field Regularization) <br>
-<img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/output/DeepArt_Blue_Moon_Lake.jpg" width=98% height=450>
+<img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural-Style-Transfer/master/images/output/DeepArt_Blue_Moon_Lake.jpg" width=98% height=450>
 
 ## Style Transfer with Color Preservation
 An example of color preservation with Kinkaku-ji, a Buddhist temple, as the content image and Monet's "Water Lilies" as the art style: <br><br>
@@ -69,7 +69,7 @@ Leonid Afremov's "Misty Mood" is the style image and "Dipping Sun" is the conten
 
 ## Multiple Style Transfer
 The next few images use the Blue Moon Lake as a content image and Vincent Van Gogh's "Starry Night" and Georgia O'Keeffe's "Red Canna" as the style images: <br>
-<img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" width=49% height=300> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/red-canna.jpg?raw=true" height=300 width=49%>
+<img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural-Style-Transfer/master/images/inputs/style/starry_night.jpg" width=49% height=300> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/red-canna.jpg?raw=true" height=300 width=49%>
 
 The below are the results after 50 iterations using 3 different style weights : <br>
 <table align='center'>
@@ -91,7 +91,7 @@ Supplying an additional binary mask for each style, we can apply the style to a 
 Note that with the `mask_transfer.py` script, a single content image can be masked with 1 mask to preserve content in blackend regions and preserve style transfer in whitened regions in the generated image. Currently, only content can be transfered in a post processed manner.
 
 "The Starry Night" is used as the style image in the below images. The mask tries to preserve the woman's shape and color, while applying the style to all other regions. Results are very good, as "The Starry Night" has a tendency to overpower the content shape and color. <br>
-<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/Dawn%20Sky.jpg?raw=true" height=300 width=50% alt="dawn sky anime"> <img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" height=300 width=49%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/Dawn%20Sky.jpg?raw=true" height=300 width=50% alt="dawn sky anime"> <img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural-Style-Transfer/master/images/inputs/style/starry_night.jpg" height=300 width=49%>
 
 <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/Dawn-Sky-Mask.jpg?raw=true" height=300 width=50%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Dawn_Sky_masked.jpg?raw=true" height=300 width=49% alt="dawn sky style transfer anime">
 
