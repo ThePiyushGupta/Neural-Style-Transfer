@@ -9,7 +9,7 @@ Masked Style Transfer is based on the paper [Show, Divide and Neural: Weighted S
 
 ## Colaboratory Support
 
-[This codebase can now be run directly from colaboratory using the following link](https://colab.research.google.com/github/titu1994/Neural-Style-Transfer/blob/master/NeuralStyleTransfer.ipynb), or by opening `NeuralStyleTransfer.ipynb` and visiting the Colab link.
+[This codebase can now be run directly from colaboratory using the following link](https://colab.research.google.com/github/ThePiyushGupta/Neural-Style-Transfer/blob/master/NeuralStyleTransfer.ipynb), or by opening `NeuralStyleTransfer.ipynb` and visiting the Colab link.
 
 Colab link supports almost all of the additional arguments, except of the masking ones. They will probably be added at a later date.
 
@@ -17,41 +17,41 @@ Colab link supports almost all of the additional arguments, except of the maskin
 
 ## Guide
 
-See the <a href="https://github.com/titu1994/Neural-Style-Transfer/blob/master/Guide.md">guide</a> for details regarding how to use the script to achieve the best results
+See the <a href="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/Guide.md">guide</a> for details regarding how to use the script to achieve the best results
 
 It also explains how to setup Theano (with GPU support) on both Windows and Linux. Theano on Windows is a long and tedious process, so the guide can speed up the process by simply letting you finish all the steps in the correct order, so as not to screw up the finicky Theano + Windows setup.
 
-The **Script Helper** program can be downloaded from the Releases tab of this repository, [Script Helper Releases](https://github.com/titu1994/Neural-Style-Transfer/releases). Extract it into any folder and run the `Neural Style Transfer.exe` program. On Linux, you will need to install Mono C# to run the script helper program.
+The **Script Helper** program can be downloaded from the Releases tab of this repository, [Script Helper Releases](https://github.com/ThePiyushGupta/Neural-Style-Transfer/releases). Extract it into any folder and run the `Neural Style Transfer.exe` program. On Linux, you will need to install Mono C# to run the script helper program.
 
 # Examples
 ## Single Style Transfer
-<img src="https://raw.githubusercontent.com/titu1994/Neural_Style_Transfer/master/images/inputs/content/blue-moon-lake.jpg" width=49% height=300 alt="blue moon lake"> <img src="https://raw.githubusercontent.com/titu1994/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" width=49% height=300 alt="starry night">
+<img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/inputs/content/blue-moon-lake.jpg" width=49% height=300 alt="blue moon lake"> <img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" width=49% height=300 alt="starry night">
 <br><br> Results after 100 iterations using the INetwork<br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Blue-Moon-Lake_at_iteration_100.jpg?raw=true" width=98% height=450 alt="blue moon lake style transfer">
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Blue-Moon-Lake_at_iteration_100.jpg?raw=true" width=98% height=450 alt="blue moon lake style transfer">
 <br><br> DeepArt.io result (1000 iterations and using improvements such as Markov Random Field Regularization) <br>
-<img src="https://raw.githubusercontent.com/titu1994/Neural_Style_Transfer/master/images/output/DeepArt_Blue_Moon_Lake.jpg" width=98% height=450>
+<img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/output/DeepArt_Blue_Moon_Lake.jpg" width=98% height=450>
 
 ## Style Transfer with Color Preservation
 An example of color preservation with Kinkaku-ji, a Buddhist temple, as the content image and Monet's "Water Lilies" as the art style: <br><br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Kinkaku-ji.jpg?raw=true" height=300 width=49%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/water-lilies-1919-2.jpg?raw=true" height=300 width=49%> <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Jukai_color_preservation.jpg?raw=true" height=300 width=49% alt="Kinkaku color preservation"> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Jukai.jpg?raw=true" width=49% height=300 alt="kinkaku style transfer">
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/Kinkaku-ji.jpg?raw=true" height=300 width=49%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/water-lilies-1919-2.jpg?raw=true" height=300 width=49%> <br>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Jukai_color_preservation.jpg?raw=true" height=300 width=49% alt="Kinkaku color preservation"> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Jukai.jpg?raw=true" width=49% height=300 alt="kinkaku style transfer">
 <br><br> As an example, here are two images of the Sagano Bamboo Forest with the "pattened-leaf" style, with and without color preservation <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/sagano_bamboo_forest.jpg?raw=true" height=450 width=49%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/patterned_leaves.jpg?raw=true" height=450 width=49%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/sagano_bamboo_forest.jpg?raw=true" height=450 width=49%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/patterned_leaves.jpg?raw=true" height=450 width=49%>
 <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Bamboo-Fores.jpg?raw=true" height=450 width=49% alt="sagano bamboo forest style transfer color preservation"> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Bamboo-Forest-No-Color-Preservation.jpg?raw=true" height=450 width=49% alt="sagano bamboo forest style transfer"> <br><br>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Bamboo-Fores.jpg?raw=true" height=450 width=49% alt="sagano bamboo forest style transfer color preservation"> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Bamboo-Forest-No-Color-Preservation.jpg?raw=true" height=450 width=49% alt="sagano bamboo forest style transfer"> <br><br>
 
 Color preservation can also be done using a mask. Using the `color_transfer.py` script and supplying a mask image, in which white regions will allow the content's colors to be transfered and black regions will keep the style-generated colors.
 
 Below, the content image is "Sunlit Mountain", with the style image as "Seated Nude" by Picasso. Notice that the color preservation mask ensures that color transfer occurs only for the sky region, while the mountains are untouched.
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Sunlit%20Mountains.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/Sunlit%20Mountains%20Color%20Mask.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/seated-nude.jpg?raw=true" height=300 width=32%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/Sunlit%20Mountains.jpg?raw=true" height=300 width=33%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/Sunlit%20Mountains%20Color%20Mask.jpg?raw=true" height=300 width=33%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/seated-nude.jpg?raw=true" height=300 width=32%>
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Sunlit-Mountain.jpg?raw=true" height=300 width=49%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Sunlit-Mountain_color_preservation.jpg?raw=true" height=300 width=50%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Sunlit-Mountain.jpg?raw=true" height=300 width=49%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Sunlit-Mountain_color_preservation.jpg?raw=true" height=300 width=50%>
 
 ## Style Interpolation
 Style weight and Content weight can be manipulated to get drastically different results.
 
 Leonid Afremov's "Misty Mood" is the style image and "Dipping Sun" is the content image : <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Dipping-Sun.jpg?raw=true" height=300 width=49%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/misty-mood-leonid-afremov.jpg?raw=true" height=300 width=50%> 
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/Dipping-Sun.jpg?raw=true" height=300 width=49%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/misty-mood-leonid-afremov.jpg?raw=true" height=300 width=50%> 
 
 <table>
 <tr align='center'>
@@ -60,16 +60,16 @@ Leonid Afremov's "Misty Mood" is the style image and "Dipping Sun" is the conten
 <td>Style=1000, Content=1</td>
 </tr>
 <tr>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/DippingSun3.jpg?raw=true" height=300></td>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/DippingSun2.jpg?raw=true" height=300></td>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/DippingSun1.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/DippingSun3.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/DippingSun2.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/DippingSun1.jpg?raw=true" height=300></td>
 </tr>
 </table>
 
 
 ## Multiple Style Transfer
 The next few images use the Blue Moon Lake as a content image and Vincent Van Gogh's "Starry Night" and Georgia O'Keeffe's "Red Canna" as the style images: <br>
-<img src="https://raw.githubusercontent.com/titu1994/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" width=49% height=300> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/red-canna.jpg?raw=true" height=300 width=49%>
+<img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" width=49% height=300> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/red-canna.jpg?raw=true" height=300 width=49%>
 
 The below are the results after 50 iterations using 3 different style weights : <br>
 <table align='center'>
@@ -79,9 +79,9 @@ The below are the results after 50 iterations using 3 different style weights : 
 <td>Starry Night : 1.0, Red Canna 1.0</td>
 </tr>
 <tr>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/blue_moon_lake_1-0_2.jpg?raw=true" height=300></td>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/blue_moon_lake_1-0_4.jpg?raw=true" height=300></td>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/blue_moon_lake_1-1_at_iteration_50.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/blue_moon_lake_1-0_2.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/blue_moon_lake_1-0_4.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/blue_moon_lake_1-1_at_iteration_50.jpg?raw=true" height=300></td>
 </tr>
 </table>
 
@@ -91,23 +91,23 @@ Supplying an additional binary mask for each style, we can apply the style to a 
 Note that with the `mask_transfer.py` script, a single content image can be masked with 1 mask to preserve content in blackend regions and preserve style transfer in whitened regions in the generated image. Currently, only content can be transfered in a post processed manner.
 
 "The Starry Night" is used as the style image in the below images. The mask tries to preserve the woman's shape and color, while applying the style to all other regions. Results are very good, as "The Starry Night" has a tendency to overpower the content shape and color. <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Dawn%20Sky.jpg?raw=true" height=300 width=50% alt="dawn sky anime"> <img src="https://raw.githubusercontent.com/titu1994/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" height=300 width=49%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/Dawn%20Sky.jpg?raw=true" height=300 width=50% alt="dawn sky anime"> <img src="https://raw.githubusercontent.com/ThePiyushGupta/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" height=300 width=49%>
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/Dawn-Sky-Mask.jpg?raw=true" height=300 width=50%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Dawn_Sky_masked.jpg?raw=true" height=300 width=49% alt="dawn sky style transfer anime">
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/Dawn-Sky-Mask.jpg?raw=true" height=300 width=50%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Dawn_Sky_masked.jpg?raw=true" height=300 width=49% alt="dawn sky style transfer anime">
 
 <br>
 Another example of masked style transfer is provided below. "Winter Wolf" is used as the content image and "Bamboo Forest" is used as the style image. The mask attempts to preserve the darkened cloudy sky, and apply the style only to the mountains and the wolf itself.
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/winter-wolf.jpg?raw=true" height=300 width=50%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/bamboo_forest.jpg?raw=true" height=300 width=49%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/winter-wolf.jpg?raw=true" height=300 width=50%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/bamboo_forest.jpg?raw=true" height=300 width=49%>
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/winter-wolf-mask.jpg?raw=true" height=300 width=50%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/WinterWolf-Masked.jpg?raw=true" height=300 width=49% alt="winter wolf style transfer">
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/winter-wolf-mask.jpg?raw=true" height=300 width=50%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/WinterWolf-Masked.jpg?raw=true" height=300 width=49% alt="winter wolf style transfer">
 
 <br>
 These last few images use "Cherry Blossoms" as the content image, and uses two styles : "Candy Style" and Monet's "Water Lillies" using their respective masks to create an image with unique results. <br>
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/candy-style.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/water-lilies-1919-2.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Japanese-cherry-widescreen-wallpaper-Picture-1366x768.jpg?raw=true" height=300 width=32%> 
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/candy-style.jpg?raw=true" height=300 width=33%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/water-lilies-1919-2.jpg?raw=true" height=300 width=33%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/Japanese-cherry-widescreen-wallpaper-Picture-1366x768.jpg?raw=true" height=300 width=32%> 
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/cherry-blossom-1.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/cherry-blossom-2.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Cherry-Blossoms.jpg?raw=true" height=300 width=32%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/cherry-blossom-1.jpg?raw=true" height=300 width=33%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/cherry-blossom-2.jpg?raw=true" height=300 width=33%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Cherry-Blossoms.jpg?raw=true" height=300 width=32%>
 
 ### Silhouette Transfer
 Using Masked Transfer, one can post process image silhouettes to generate from scratch artwork that is sharp, clear and manipulates the style to conform to the shape of the silhouette itself.
@@ -122,9 +122,9 @@ For this image, Starry Night was used as the Style Image.
 <td>Generated</td>
 </tr>
 <tr>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/Fai%20D%20Flowrite%20-%20Ring.jpg?raw=true" height=300></td>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/Fai%20D%20Flowrite%20-%20Ring%20-%20Inv.jpg?raw=true" height=300></td>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Fai-Silhuete.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/Fai%20D%20Flowrite%20-%20Ring.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/Fai%20D%20Flowrite%20-%20Ring%20-%20Inv.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Fai-Silhuete.jpg?raw=true" height=300></td>
 </tr>
 </table>
 
@@ -135,12 +135,12 @@ For this example, we use "Blue Strokes" as the style image
 <td>Style</td>
 </tr>
 <tr>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/Sakura%20no%20Tsubasa.png?raw=true" height=300></td>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/Blue%20Strokes.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/Sakura%20no%20Tsubasa.png?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/Blue%20Strokes.jpg?raw=true" height=300></td>
 </tr>
 <tr>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Wings-Silhuete.jpg?raw=true" height=300></td>
-<td><img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Wings-Silhuete%202.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Wings-Silhuete.jpg?raw=true" height=300></td>
+<td><img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Wings-Silhuete%202.jpg?raw=true" height=300></td>
 </tr>
 </table>
 
@@ -149,31 +149,31 @@ Utilizing a style image with a very distinctive texture, we can apply this textu
 
 The below is an example of the content image "Aurea Luna", with the texture images which are available in the /style/metals directory, which are Silver and Gold. Color Preservation is applied to both images, and a mask is applied on the "Burnt Gold" image to style just the circle and not the entire square image.
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Aurea-Luna.jpg?raw=true" width=33% alt="aurea luna golden moon clow reed"> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/metals/silver_plate.jpg?raw=true" width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/metals/burnt_gold.jpg?raw=true" width=33%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/Aurea-Luna.jpg?raw=true" width=33% alt="aurea luna golden moon clow reed"> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/metals/silver_plate.jpg?raw=true" width=33%> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/metals/burnt_gold.jpg?raw=true" width=33%>
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/molten-silver.jpg?raw=true" width=50% alt="molten silver moon"> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/burnt-gold.jpg?raw=true" width=49% alt="burnt gold moon">
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/molten-silver.jpg?raw=true" width=50% alt="molten silver moon"> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/burnt-gold.jpg?raw=true" width=49% alt="burnt gold moon">
 
 ## All Transfer Techniques
 Each of these techniques can be used together, or in stages to generate stunning images. 
 
 In the folowing image, I have used Masked style transfer in a multi scale style transfer technique - with scales of 192x192, 384x384, 768x768, applied a super resolution algorithm (4x and then downscaled to 1920x1080), applied color transfer and mask transfer again to sharpen the edges, used a simple sharpening algorithm and then finally denoise algorithm.
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/ancient_city.jpg?raw=true" width=33% alt="ancient city japanese" height=250> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/blue_swirls.jpg?raw=true" width=33% height=250> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/ancient-city.jpg?raw=true" width=33% height=250> 
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/content/ancient_city.jpg?raw=true" width=33% alt="ancient city japanese" height=250> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/style/blue_swirls.jpg?raw=true" width=33% height=250> <img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/inputs/mask/ancient-city.jpg?raw=true" width=33% height=250> 
 
 Result : <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/ancient_city_multiscale.jpg?raw=true" width=99% alt="ancient city japanese">
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/ancient_city_multiscale.jpg?raw=true" width=99% alt="ancient city japanese">
 
 ## Various results with / without Color Preservation
 Example of various styles (with and without color preservation). Images of the "Lost Grounds" from .Hack G.U.<br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Lost-Grounds.jpg?raw=true" width=98%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/output/Lost-Grounds.jpg?raw=true" width=98%>
 
 # Neural Doodle Examples
 Renoit Style + Content Image <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/neural_doodle/generated/renoit_new.png?raw=true" width=98%><br>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/neural_doodle/generated/renoit_new.png?raw=true" width=98%><br>
 Monet Style + Doodle Creation <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/neural_doodle/generated/monet_new.png?raw=true" width=98%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/neural_doodle/generated/monet_new.png?raw=true" width=98%>
 <br>Van Gogh + Doodle Creation <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/neural_doodle/generated/van%20gogh.png?raw=true" width=98%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/neural_doodle/generated/van%20gogh.png?raw=true" width=98%>
 
 ## Weights (VGG 16)
 
@@ -211,10 +211,10 @@ These improvements are almost same as the Chain Blurred version, however a few d
 ## Script Helper
 It is a C# program written to more easily generate the arguments for the python script Network.py or INetwork.py (Using Neural Style Transfer tab) and neural_doodle.py or improved_neural_doodle.py script (Using Neural Doodle Tab)
 
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/Neural%20Art%20Windows.JPG?raw=true" height=600 width=98%>
+<img src="https://github.com/ThePiyushGupta/Neural-Style-Transfer/blob/master/images/Neural%20Art%20Windows.JPG?raw=true" height=600 width=98%>
 
 - Upon first run, it will request the python path. Traverse your directory to locate the python.exe of your choice (Anaconda is tested)
-- The script helper program code is available at: https://github.com/titu1994/Neural-Style-Transfer-Windows The program runs on Linux using Mono
+- The script helper program code is available at: https://github.com/ThePiyushGupta/Neural-Style-Transfer-Windows The program runs on Linux using Mono
 
 ### Benefits 
 - Allows Style Transfer, Neural Doodles, Color Transfer and Masked Style Transfer easily
@@ -405,7 +405,7 @@ python mask_transfer.py "path/to/content/image" "path/to/generated/image" "path/
 ```
 
 # Network.py in action
-![Alt Text](https://raw.githubusercontent.com/titu1994/Neural-Style-Transfer/master/images/Blue%20Moon%20Lake.gif)
+![Alt Text](https://raw.githubusercontent.com/ThePiyushGupta/Neural-Style-Transfer/master/images/Blue%20Moon%20Lake.gif)
 
 # Requirements 
 - Theano / Tensorflow
