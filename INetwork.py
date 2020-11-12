@@ -644,7 +644,6 @@ for i in range(num_iter):
     end_time = time.time()
     print("Image saved as", fname)
     print("Iteration %d completed in %ds" % (i + 1, end_time - start_time))
-    display(Image(fname, width=500))
 
     if improvement_threshold is not 0.0:
         if improvement < improvement_threshold and improvement is not 0.0:
